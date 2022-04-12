@@ -1,0 +1,541 @@
+// 颜色定义规范
+// 背景主题颜色
+//blue默认 dark深色模式
+$background-color-blue: #fff;
+$background-color-chinese-medicine: #652BF5;
+$background-color-childlike，: deepskyblue;
+$background-color-technology: #edc148;
+$background-color-dark: rgba(16,45,96,1);
+
+$background-img-blue: url('./assets/images/app-background.png');
+$background-img-chinese-medicine: url('./assets/images/app-background.png');
+$background-img-childlike: url('./assets/images/app-background.png');
+$background-img-technology: url('./assets/images/app-background.png');
+$background-img-dark: url('./assets/images/app-background-dark.png');
+
+$header-img-blue: url('../assets/images/header-background.png');
+$header-img-chinese-medicine: url('../assets/images/header-background.png');
+$header-img-childlike: url('../assets/images/header-background.png');
+$header-img-technology: url('../assets/images/header-background.png');
+$header-img-dark: url('../assets/images/header-background-dark.png');
+
+$menu-box-bg-color-blue: #e9effc;
+$menu-box-bg-color-chinese-medicine: #e9effc;
+$menu-box-bg-color-childlike: #e9effc;
+$menu-box-bg-color-technology: #e9effc;
+$menu-box-bg-color-dark: linear-gradient(360deg,rgba(0,28,75,1) 0%,rgba(54,104,191,1) 100%);
+
+$menu-box-active-color-blue: linear-gradient(180deg, rgba(83, 109, 172, 1) 0%, rgba(41, 59, 116, 1) 100%);
+$menu-box-active-color-chinese-medicine: linear-gradient(180deg, rgba(83, 109, 172, 1) 0%, rgba(41, 59, 116, 1) 100%);
+$menu-box-active-color-childlike: linear-gradient(180deg, rgba(83, 109, 172, 1) 0%, rgba(41, 59, 116, 1) 100%);
+$menu-box-active-color-technology: linear-gradient(180deg, rgba(83, 109, 172, 1) 0%, rgba(41, 59, 116, 1) 100%);
+$menu-box-active-color-dark: linear-gradient(360deg,rgba(25,69,145,1) 0%,rgba(92,141,227,1) 100%);
+
+$menu-box-shadow-blue: 2px -2px 2px 0 rgba(183, 195, 218, 0.5);
+$menu-box-shadow-chinese-medicine: 2px -2px 2px 0 rgba(183, 195, 218, 0.5);
+$menu-box-shadow-childlike: 2px -2px 2px 0 rgba(183, 195, 218, 0.5);
+$menu-box-shadow-technology: 2px -2px 2px 0 rgba(183, 195, 218, 0.5);
+$menu-box-shadow-dark: 2px -2px 2px rgba(26,40,87,1);
+
+// app 背景
+$background-blue: linear-gradient(#007bf1, #003ec1);
+$background-chinese-medicine: #652BF5;
+$background-childlike: deepskyblue;
+$background-technology: #edc148;
+
+$font-color-blue: #656D81;
+$font-color-chinese-medicine: red;
+$font-color-childlike: #1c1bf5;
+$font-color-technology: deepskyblue;
+
+// 首页 标题字体颜色
+$home-page-title-font-color-blue: #18285C;
+$home-page-title-font-color-chinese-medicine: #fff;
+$home-page-title-font-color-childlike: #fff;
+$home-page-title-font-color-technology: #fff;
+$home-page-title-font-color-dark: #97BDFF;
+
+// 首页 小标题字体颜色
+$home-page-title-s-font-color-blue: #656D81;
+$home-page-title-s-font-color-chinese-medicine: #4996e2;
+$home-page-title-s-font-color-childlike: #4996e2;
+$home-page-title-s-font-color-technology: #4996e2;
+$home-page-title-s-font-color-dark: #F0FBFF;
+
+// 首页 其他字体颜色
+$home-page-font-color-blue: #000;
+$home-page-font-color-chinese-medicine: #000;
+$home-page-font-color-childlike: #000;
+$home-page-font-color-technology: #000;
+$home-page-font-color-dark: #E9F1FF;
+
+//备忘录-标题字体颜色
+$remark-title-font-color-blue: #154dbc;
+$remark-title-font-color-chinese-medicine: #154dbc;
+$remark-title-font-color-childlike: #154dbc;
+$remark-title-font-color-technology: #154dbc;
+$remark-title-font-color-dark: #FFFFFF;
+
+//小标题字体颜色
+$title-s-font-color-blue: #1873f2;
+$title-s-font-color-chinese-medicine: #1873f2;
+$title-s-font-color-childlike: #1873f2;
+$title-s-font-color-technology: #1873f2;
+$title-s-font-color-dark: #FFFFFF;
+
+//医生卡背景色
+$doctor-item-bg-color-blue:#f1f4ff;
+$doctor-item-bg-color-chinese-medicine:#f1f4ff;
+$doctor-item-bg-color-childlike:#f1f4ff;
+$doctor-item-bg-color-technology:#f1f4ff;
+$doctor-item-bg-color-dark:rgba(234,249,252,0.15);
+
+//按钮字体
+$go-back-font-color-blue: #5d77ab;
+$go-back-font-color-chinese-medicine: #5d77ab;
+$go-back-font-color-childlike: #5d77ab;
+$go-back-font-color-technology: #5d77ab;
+$go-back-font-color-dark: #FFFFFF;
+
+//按钮边框
+$button-border-blue: 1px solid #d5e1f8;
+$button-border-chinese-medicine: 1px solid #d5e1f8;
+$button-border-childlike: 1px solid #d5e1f8;
+$button-border-technology: 1px solid #d5e1f8;
+$button-border-dark: 2px solid rgba(72,166,193,0.20392156862745098);
+
+//基础按钮颜色
+$button-bg-pri-color-blue: #409eff;
+$button-bg-pri-color-chinese-medicine: #409eff;
+$button-bg-pri-color-childlike: #409eff;
+$button-bg-pri-color-technology: #409eff;
+$button-bg-pri-color-dark: rgba(61,96,156,1);
+
+//基础按钮边框颜色
+$button-border-pri-color-blue: #409eff;
+$button-border-pri-color-chinese-medicine: #409eff;
+$button-border-pri-color-childlike: #409eff;
+$button-border-pri-color-technology: #409eff;
+$button-border-pri-color-dark: rgba(61,96,156,1);
+
+//默认按钮颜色
+$button-bg-color-blue: #fff;
+$button-bg-color-chinese-medicine: #fff;
+$button-bg-color-childlike: #fff;
+$button-bg-color-technology: #fff;
+$button-bg-color-dark: rgba(61,96,156,0.4);
+
+//默认按钮边框颜色
+$button-border-color-blue: 0.00521rem solid #DCDFE6;
+$button-border-color-chinese-medicine: 0.00521rem solid #DCDFE6;
+$button-border-color-childlike: 0.00521rem solid #DCDFE6;
+$button-border-color-technology: 0.00521rem solid #DCDFE6;
+$button-border-color-dark: 2px solid rgba(61,96,156,1);
+
+//菜单背景
+$el-menu-bg-blue: #fff;
+$el-menu-bg-chinese-medicine: #fff;
+$el-menu-bg-childlike: #fff;
+$el-menu-bg-technology: #fff;
+$el-menu-bg-dark: rgba(35,65,127,0.6);
+
+//菜单字体
+$el-menu-font-color-blue: #303133;
+$el-menu-font-color-chinese-medicine: #303133;
+$el-menu-font-color-childlike: #303133;
+$el-menu-font-color-technology: #303133;
+$el-menu-font-color-dark: #FFFFFF;
+
+//表格虚线边框
+$el-table-dashed-border-blue: 0.00521rem dashed #d3d7e2;
+$el-table-dashed-border-chinese-medicine: 0.00521rem dashed #d3d7e2;
+$el-table-dashed-border-childlike: 0.00521rem dashed #d3d7e2;
+$el-table-dashed-border-technology: 0.00521rem dashed #d3d7e2;
+$el-table-dashed-border-dark: 1px dashed rgba(103,139,204,0.5);
+
+
+//菜单hover
+$el-menu-item-hover-blue: #ecf5ff;
+$el-menu-item-hover-chinese-medicine: #ecf5ff;
+$el-menu-item-hover-childlike: #ecf5ff;
+$el-menu-item-hover-technology: #ecf5ff;
+$el-menu-item-hover-dark: rgba(84, 136, 241, 0.2);
+
+//弹框背景色
+$dialog-background-color-blue: #fff;
+$dialog-background-color-chinese-medicine: #fff;
+$dialog-background-color-childlike: #fff;
+$dialog-background-color-technology: #fff;
+$dialog-background-color-dark: #102D60;
+
+//表格标题字体颜色
+$el-table-title-font-color-blue: #909399;
+$el-table-title-font-color-chinese-medicine: #909399;
+$el-table-title-font-color-childlike: #909399;
+$el-table-title-font-color-technology: #909399;
+$el-table-title-font-color-dark: #FFFFFF;
+
+//表格标题背景颜色
+$el-table-title-bg-color-blue: #19295e;
+$el-table-title-bg-color-chinese-medicine: #19295e;
+$el-table-title-bg-color-childlike: #19295e;
+$el-table-title-bg-color-technology: #19295e;
+$el-table-title-bg-color-dark: rgba(76,142,222,0.3);
+
+//表格内容字体颜色
+$el-table-font-color-blue: #606266;
+$el-table-font-color-chinese-medicine: #606266;
+$el-table-font-color-childlike: #606266;
+$el-table-font-color-technology: #606266;
+$el-table-font-color-dark: #FFFFFF;
+
+//表格下边框
+$el-table-border-bottom-blue:0.00521rem solid #EBEEF5;
+$el-table-border-bottom-chinese-medicine:0.00521rem solid #EBEEF5;
+$el-table-border-bottom-childlike:0.00521rem solid #EBEEF5;
+$el-table-border-bottom-technology:0.00521rem solid #EBEEF5;
+$el-table-border-bottom-dark:0.00521rem solid rgba(127,173,255,0.2);
+
+//cis交班菜单背景
+$cis-menu-bg-color-blue: #dde8fd;
+$cis-menu-bg-color-chinese-medicine: #dde8fd;
+$cis-menu-bg-color-childlike: #dde8fd;
+$cis-menu-bg-color-technology: #dde8fd;
+$cis-menu-bg-color-dark: linear-gradient(180deg,rgba(29,155,199,1) 0%,rgba(17,77,143,1) 100%);
+
+//cis交班数字颜色
+$cis-menu-number-color-blue: #5488f1;
+$cis-menu-number-color-chinese-medicine: #5488f1;
+$cis-menu-number-color-childlike: #5488f1;
+$cis-menu-number-color-technology: #5488f1;
+$cis-menu-number-color-dark: transparent;
+
+//cis交班表格背景
+$cis-tb--bg-color-blue: #c5d6f7;
+$cis-tb--bg-color-chinese-medicine: #c5d6f7;
+$cis-tb--bg-color-childlike: #c5d6f7;
+$cis-tb--bg-color-technology: #c5d6f7;
+$cis-tb--bg-color-dark: rgba(76,142,222,0.3);
+
+//患者详情交班菜单背景
+$treat-menu-bg-color-blue: #005bcc;
+$treat-menu-bg-color-chinese-medicine: #005bcc;
+$treat-menu-bg-color-childlike: #005bcc;
+$treat-menu-bg-color-technology: #005bcc;
+$treat-menu-bg-color-dark: linear-gradient(180deg,rgba(29,155,199,1) 0%,rgba(17,77,143,1) 100%);
+
+// 首页头部 线 点 背景色
+$home-page-line-bgc: #fff;
+$home-page-circle-bgc: #fff;
+
+// 首页内容 标题 背景色 横版
+$home-page-title-bg-color-blue: linear-gradient(#0039bf, #0072d4);
+$home-page-title-bg-color-chinese-medicine: linear-gradient(#0039bf, #0072d4);
+$home-page-title-bg-color-childlike: linear-gradient(#0039bf, #0072d4);
+$home-page-title-bg-color-technology: linear-gradient(#0039bf, #0072d4);
+
+// 首页内容 标题 下边框
+$home-page-title-border-blue: 3px solid #18285C;
+$home-page-title-border-chinese-medicine: 3px solid #18285C;
+$home-page-title-border-childlike: 3px solid #18285C;
+$home-page-title-border-technology: 3px solid #18285C;
+$home-page-title-border-dark: 3px solid #97BDFF;
+
+// 首页内容 标题 背景色 竖版
+$home-page-title-s-bg-color-blue: linear-gradient(right, #0039bf, #0072d4);
+$home-page-title-s-bg-color-chinese-medicine: linear-gradient(right, #0039bf, #0072d4);
+$home-page-title-s-bg-color-childlike: linear-gradient(right, #0039bf, #0072d4);
+$home-page-title-s-bg-color-technology: linear-gradient(right, #0039bf, #0072d4);
+
+// 首页内容 容器 背景色 横版
+$home-page-content-bg-color-blue: #fff;
+$home-page-content-bg-color-dark: radial-gradient(circle,rgba(4,34,92,0.2) 0%,rgba(34,91,179,0.2) 100%);
+$home-page-content-bg-color-chinese-medicine: #fff;
+$home-page-content-bg-color-childlike: #fff;
+$home-page-content-bg-color-technology: #fff;
+
+// 首页内容 容器 背景色 竖版
+$home-page-content-s-bg-color-blue: #fff;
+$home-page-content-s-bg-color-chinese-medicine: #fff;
+$home-page-content-s-bg-color-childlike: #fff;
+$home-page-content-s-bg-color-technology: #fff;
+
+// 首页 横版 - 所有床位 跳转按钮颜色
+$home-page-link-color-blue: #4496e2;
+$home-page-link-color-chinese-medicine: #4496e2;
+$home-page-link-color-childlike: #4496e2;
+$home-page-link-color-technology: #4496e2;
+
+$home-line-border-blue: 2px dashed #e3e8f2;
+$home-line-border-chinese-medicine: 2px dashed #e3e8f2;
+$home-line-border-childlike: 2px dashed #e3e8f2;
+$home-line-border-technology: 2px dashed #e3e8f2;
+$home-line-border-dark: 2px dashed rgba(227,232,242,0.3);
+
+//患者详情菜单激活颜色
+$treat-menu-active-color-blue: #1873f2;
+$treat-menu-active-color-chinese-medicine: #1873f2;
+$treat-menu-active-color-childlike: #1873f2;
+$treat-menu-active-color-technology: #1873f2;
+$treat-menu-active-color-dark: #00BAAF;
+
+// 二级页面 背景颜色
+$secondary-page-bg-blue: #fff;
+$secondary-page-bg-chinese-medicine: #fff;
+$secondary-page-bg-childlike: #fff;
+$secondary-page-bg-technology: #fff;
+// 二级页面 字体颜色
+$secondary-page-color-blue: #000;
+$secondary-page-color-chinese-medicine: #000;
+$secondary-page-color-childlike: #000;
+$secondary-page-color-technology: #000;
+
+
+//字体定义规范
+$font_little_s:10px;
+$font_little:12px;
+$font_medium_s:14px;
+$font_medium:16px;
+$font_large_s:18px;
+$font_large:20px;
+
+// 床位号突出
+$bed-no-focus-blue: #1e3c72;
+$bed-no-focus-chinese-medicine: #1e3c72;
+$bed-no-focus-childlike: #1e3c72;
+$bed-no-focus-technology: #1e3c72;
+$bed-no-focus-dark: linear-gradient(180deg,rgba(29,155,199,1) 0%,rgba(17,77,143,1) 100%);
+
+// 床位号常规
+$bed-no-unfocus-blue: #fff;
+$bed-no-unfocus-chinese-medicine: #fff;
+$bed-no-unfocus-childlike: #fff;
+$bed-no-unfocus-technology: #fff;
+$bed-no-unfocus-dark: #1E3C72;
+
+//首页tooptip颜色
+$home-message-box-color-dark: linear-gradient(180deg,rgba(16,105,170,1) 0%,rgba(7,56,113,1) 100%);
+$home-message-box-color-blue: #fff;
+$home-message-box-color-chinese-medicine: #fff;
+$home-message-box-color-childlike: #fff;
+$home-message-box-color-technology: #fff;
+
+//模块图标-危重
+$module-wz-icon-blue:url('../assets/images/module-wz.png');
+$module-wz-icon-chinese-medicine:url('../assets/images/module-wz.png');
+$module-wz-icon-childlike:url('../assets/images/module-wz.png');
+$module-wz-icon-technology:url('../assets/images/module-wz.png');
+$module-wz-icon-dark:url('../assets/images/module-wz-dark.png');
+
+//模块图标-病区概览
+$module-bqgl-icon-blue:url('../assets/images/module-bqgl.png');
+$module-bqgl-icon-chinese-medicine:url('../assets/images/module-bqgl.png');
+$module-bqgl-icon-childlike:url('../assets/images/module-bqgl.png');
+$module-bqgl-icon-technology:url('../assets/images/module-bqgl.png');
+$module-bqgl-icon-dark:url('../assets/images/module-bqgl-dark.png');
+
+//模块图标-分娩
+$module-fm-icon-blue:url('../assets/images/module-fm.png');
+$module-fm-icon-chinese-medicine:url('../assets/images/module-fm.png');
+$module-fm-icon-childlike:url('../assets/images/module-fm.png');
+$module-fm-icon-technology:url('../assets/images/module-fm.png');
+$module-fm-icon-dark:url('../assets/images/module-fm-dark.png');
+
+//模块图标-出区
+$module-cq-icon-blue:url('../assets/images/module-cq.png');
+$module-cq-icon-chinese-medicine:url('../assets/images/module-cq.png');
+$module-cq-icon-childlike:url('../assets/images/module-cq.png');
+$module-cq-icon-technology:url('../assets/images/module-cq.png');
+$module-cq-icon-dark:url('../assets/images/module-cq-dark.png');
+
+//模块图标-床位列表
+$module-cwlb-icon-blue:url('../assets/images/module-cwlb.png');
+$module-cwlb-icon-chinese-medicine:url('../assets/images/module-cwlb.png');
+$module-cwlb-icon-childlike:url('../assets/images/module-cwlb.png');
+$module-cwlb-icon-technology:url('../assets/images/module-cwlb.png');
+$module-cwlb-icon-dark:url('../assets/images/module-cwlb-dark.png');
+
+//模块图标-预约检查
+$module-yyjc-icon-blue:url('../assets/images/module-yyjc.png');
+$module-yyjc-icon-chinese-medicine:url('../assets/images/module-yyjc.png');
+$module-yyjc-icon-childlike:url('../assets/images/module-yyjc.png');
+$module-yyjc-icon-technology:url('../assets/images/module-yyjc.png');
+$module-yyjc-icon-dark:url('../assets/images/module-yyjc-dark.png');
+
+//模块图标-患者分组
+$module-hzfz-icon-blue:url('../assets/images/module-hzfz.png');
+$module-hzfz-icon-chinese-medicine:url('../assets/images/module-hzfz.png');
+$module-hzfz-icon-childlike:url('../assets/images/module-hzfz.png');
+$module-hzfz-icon-technology:url('../assets/images/module-hzfz.png');
+$module-hzfz-icon-dark:url('../assets/images/module-hzfz-dark.png');
+
+//模块图标-病区关注
+$module-bqgz-icon-blue:url('../assets/images/module-bqgz.png');
+$module-bqgz-icon-chinese-medicine:url('../assets/images/module-bqgz.png');
+$module-bqgz-icon-childlike:url('../assets/images/module-bqgz.png');
+$module-bqgz-icon-technology:url('../assets/images/module-bqgz.png');
+$module-bqgz-icon-dark:url('../assets/images/module-bqgz-dark.png');
+
+//模块图标-手术排期
+$module-sspq-icon-blue:url('../assets/images/module-sspq.png');
+$module-sspq-icon-chinese-medicine:url('../assets/images/module-sspq.png');
+$module-sspq-icon-childlike:url('../assets/images/module-sspq.png');
+$module-sspq-icon-technology:url('../assets/images/module-sspq.png');
+$module-sspq-icon-dark:url('../assets/images/module-sspq-dark.png');
+
+//模块图标-入区
+$module-rq-icon-blue:url('../assets/images/module-rq.png');
+$module-rq-icon-chinese-medicine:url('../assets/images/module-rq.png');
+$module-rq-icon-childlike:url('../assets/images/module-rq.png');
+$module-rq-icon-technology:url('../assets/images/module-rq.png');
+$module-rq-icon-dark:url('../assets/images/module-rq-dark.png');
+
+//模块图标-新生儿
+$module-xse-icon-blue:url('../assets/images/module-xse.png');
+$module-xse-icon-chinese-medicine:url('../assets/images/module-xse.png');
+$module-xse-icon-childlike:url('../assets/images/module-xse.png');
+$module-xse-icon-technology:url('../assets/images/module-xse.png');
+$module-xse-icon-dark:url('../assets/images/module-xse-dark.png');
+
+//模块图标-诊疗组
+$module-zlz-icon-blue:url('../../../assets/images/icon-menu-note.png');
+$module-zlz-icon-chinese-medicine:url('../../../assets/images/icon-menu-note.png');
+$module-zlz-icon-childlike:url('../../../assets/images/icon-menu-note.png');
+$module-zlz-icon-technology:url('../../../assets/images/icon-menu-note.png');
+$module-zlz-icon-dark:url('../../../assets/images/icon-menu-note-dark.png');
+
+//菜单图标-首页
+$menu-home-icon-blue:url('./assets/images/icon-menu-home.png');
+$menu-home-icon-chinese-medicine:url('./assets/images/icon-menu-home.png');
+$menu-home-icon-childlike:url('./assets/images/icon-menu-home.png');
+$menu-home-icon-technology:url('./assets/images/icon-menu-home.png');
+$menu-home-icon-dark:url('./assets/images/icon-menu-home-dark.png');
+
+//菜单图标-床位列表
+$menu-cwlb-icon-blue:url('./assets/images/icon-menu-bed.png');
+$menu-cwlb-icon-chinese-medicine:url('./assets/images/icon-menu-bed.png');
+$menu-cwlb-icon-childlike:url('./assets/images/icon-menu-bed.png');
+$menu-cwlb-icon-technology:url('./assets/images/icon-menu-bed.png');
+$menu-cwlb-icon-dark:url('./assets/images/module-cwlb-dark.png');
+
+//菜单图标-备忘录
+$menu-bwl-icon-blue:url('./assets/images/icon-menu-note.png');
+$menu-bwl-icon-chinese-medicine:url('./assets/images/icon-menu-note.png');
+$menu-bwl-icon-childlike:url('./assets/images/icon-menu-note.png');
+$menu-bwl-icon-technology:url('./assets/images/icon-menu-note.png');
+$menu-bwl-icon-dark:url('./assets/images/icon-menu-note-dark.png');
+
+//菜单图标-辅助交班
+$menu-fzjb-icon-blue:url('./assets/images/icon-menu-hander.png');
+$menu-fzjb-icon-chinese-medicine:url('./assets/images/icon-menu-hander.png');
+$menu-fzjb-icon-childlike:url('./assets/images/icon-menu-hander.png');
+$menu-fzjb-icon-technology:url('./assets/images/icon-menu-hander.png');
+$menu-fzjb-icon-dark:url('./assets/images/icon-menu-hander-dark.png');
+
+//检验趋势图图标
+$lis-trend-icon-blue: url('../assets/images/icon-trend.png');
+$lis-trend-icon-chinese-medicine: url('../assets/images/icon-trend.png');
+$lis-trend-icon-childlike: url('../assets/images/icon-trend.png');
+$lis-trend-icon-technology: url('../assets/images/icon-trend.png');
+$lis-trend-icon-dark: url('../assets/images/icon-trend-dark.png');
+
+//字体增大图标
+$font-add-icon-blue: url('../assets/images/fons-size-big.png');
+$font-add-icon-chinese-medicine: url('../assets/images/fons-size-big.png');
+$font-add-icon-childlike: url('../assets/images/fons-size-big.png');
+$font-add-icon-technology: url('../assets/images/fons-size-big.png');
+$font-add-icon-dark: url('../assets/images/fons-size-big-dark.png');
+
+//字体增大图标
+$font-cut-icon-blue: url('../assets/images/font-size-small.png');
+$font-cut-icon-chinese-medicine: url('../assets/images/font-size-small.png');
+$font-cut-icon-childlike: url('../assets/images/font-size-small.png');
+$font-cut-icon-technology: url('../assets/images/font-size-small.png');
+$font-cut-icon-dark: url('../assets/images/font-size-small-dark.png');
+
+//时间线颜色
+$time-line-bg-color-blue: #E4E7ED;
+$time-line-bg-color-chinese-medicine: #E4E7ED;
+$time-line-bg-color-childlike: #E4E7ED;
+$time-line-bg-color-technology: #E4E7ED;
+$time-line-bg-color-dark: #5E93F1;
+
+//超链接字体颜色
+$a-font-color-blue: #333;
+$a-font-color-chinese-medicine: #333;
+$a-font-color-childlike: #333;
+$a-font-color-technology: #333;
+$a-font-color-dark: #34C7E4;
+
+//超链接字体颜色
+$a-not-active-font-color-blue: #ccc;
+$a-not-active-font-color-chinese-medicine: #ccc;
+$a-not-active-font-color-childlike: #ccc;
+$a-not-active-font-color-technology: #ccc;
+$a-not-active-font-color-dark: #0A6DAC;
+
+//患者详情头部背景
+$treat-header-bg-blue: url('../../../assets/images/header-background.png');
+$treat-header-bg-chinese-medicine: url('../../../assets/images/header-background.png');
+$treat-header-bg-childlike: url('../../../assets/images/header-background.png');
+$treat-header-bg-technology: url('../../../assets/images/header-background.png');
+$treat-header-bg-dark: linear-gradient(270deg,rgba(0,0,0,0) 0%,rgba(1,13,71,1) 100%);
+
+//就诊记录时间轴背景
+$time-history-bg-color-blue: #fff;
+$time-history-bg-color-chinese-medicine: #fff;
+$time-history-bg-color-childlike: #fff;
+$time-history-bg-color-technology: #fff;
+$time-history-bg-color-dark: linear-gradient(360deg,rgba(34,91,179,0.4) 0%,rgba(13,54,126,0.4) 100%);
+
+//时间轴线
+$time-history-line-blue:  2px dashed #dde3ec;
+$time-history-line-chinese-medicine:  2px dashed #dde3ec;
+$time-history-line-childlike:  2px dashed #dde3ec;
+$time-history-line-technology:  2px dashed #dde3ec;
+$time-history-line-dark:  2px dashed rgba(112,112,112,0.8);
+
+//时间轴字体
+$time-history-font-color-blue: #666;
+$time-history-font-color-chinese-medicine: #666;
+$time-history-font-color-childlike: #666;
+$time-history-font-color-technology: #666;
+$time-history-font-color-dark: #fff;
+
+//滚动条背景色
+$scrollbar-bg-color-blue: #F5F5F5;
+$scrollbar-bg-color-chinese-medicine: #F5F5F5;
+$scrollbar-bg-color-childlike: #F5F5F5;
+$scrollbar-bg-color-technology: #F5F5F5;
+$scrollbar-bg-color-dark: rgba(10,109,172,0.2);
+
+//滚动条滑块颜色
+$scrollbar-thumb-bg-color-dark: rgba(10,109,172,1);
+
+//病区头条内容标题
+$bqtt-content-title-font-color-blue: #1873f2;
+$bqtt-content-title-font-color-chinese-medicine: #1873f2;
+$bqtt-content-title-font-color-childlike: #1873f2;
+$bqtt-content-title-font-color-technology: #1873f2;
+$bqtt-content-title-font-color-dark: #97BDFF;
+
+//患者详情头部医生图标
+$treat-icon-doctor-blue: url('../../../assets/images/icon-main-doctor.png');
+$treat-icon-doctor-chinese-medicine: url('../../../assets/images/icon-main-doctor.png');
+$treat-icon-doctor-childlike: url('../../../assets/images/icon-main-doctor.png');
+$treat-icon-doctor-technology: url('../../../assets/images/icon-main-doctor.png');
+$treat-icon-doctor-dark: url('../../../assets/images/icon-main-doctor-dark.png');
+
+//患者详情头部护士图标
+$treat-icon-nurse-blue: url('../../../assets/images/icon-nurse.png');
+$treat-icon-nurse-chinese-medicine: url('../../../assets/images/icon-nurse.png');
+$treat-icon-nurse-childlike: url('../../../assets/images/icon-nurse.png');
+$treat-icon-nurse-technology: url('../../../assets/images/icon-nurse.png');
+$treat-icon-nurse-dark: url('../../../assets/images/icon-nurse-dark.png');
+
+//患者分组背景
+$hzfz-2n-bg-color-blue: #fafafa;
+$hzfz-2n-bg-color-chinese-medicine: #fafafa;
+$hzfz-2n-bg-color-childlike: #fafafa;
+$hzfz-2n-bg-color-technology: #fafafa;
+$hzfz-2n-bg-color-dark: radial-gradient(circle,rgba(4,34,92,0.2) 0%,rgba(34,91,179,0.2) 100%);

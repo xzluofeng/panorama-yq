@@ -1,0 +1,910 @@
+// 下拉框 展示两部分内容
+.select-left {
+  float: left;
+  font-size: 18px;
+}
+
+.select-right {
+  float: right;
+  color: #8492a6;
+  font-size: 18px;
+}
+
+.el-table .el-table__empty-text {
+  width: auto;
+}
+
+// 登录页面
+.login {
+  // 下拉框 placeholder 字体大小
+  .el-input--medium .el-input__inner {
+    height: 50px;
+    font-size: 18px;
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      font-size: 18px;
+    }
+  }
+}
+
+// 登录页面下拉框字体大小
+.login-select-popper {
+  .el-select-dropdown__item {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    @include puhui-r;
+  }
+
+  .select-right {
+    font-size: 16px;
+    @include puhui-r;
+  }
+
+  .el-select-dropdown__empty {
+    font-size: 18px;
+    @include puhui-r;
+  }
+}
+
+// 电子白板页面右上角，工具弹框
+.util-popover.el-popover,
+.config-popover.el-popover {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(24, 40, 92, 0.3);
+  border-radius: 8PX;
+  border: none;
+
+  .util-menu,
+  .config-menu {
+    height: 60px;
+    font-size: 18px;
+    @include home-font-color;
+    span {
+      cursor: pointer;
+    }
+
+    i {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      font-size: 30px;
+    }
+  }
+
+  .popper__arrow,
+  .popper__arrow::after {
+    border-bottom-color: #273d93 !important;
+  }
+}
+
+// .util-popover.el-popover {
+//   width: 280px;
+// }
+
+.config-popover.el-popover {
+  width: 210px;
+}
+
+// 选择关联病区样式
+.choose-area-dialog {
+  .el-dialog {
+    height: 360px;
+    border-radius: 8PX;
+    background: linear-gradient(360deg,
+        #18285c 0%,
+        #273d93 100%);
+    box-shadow: 0px 0px 5px rgba(24, 40, 92, 0.3);
+  }
+
+  .logo-box {
+    width: 140px;
+    height: 40px;
+    background-image: url('../assets/images/logo-pro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+  }
+
+  .el-select {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .el-input__inner {
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    @include puhui-r;
+  }
+
+  .el-dialog__body {
+    padding: 30px 50px;
+    text-align: center;
+  }
+
+  .choose-btn {
+    width: 158px;
+    height: 44px;
+    background: rgba(55, 70, 122, 1);
+    box-shadow: 0px 0px 5px rgba(24, 40, 92, 0.6);
+    border-radius: 22PX;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: rgba(55, 70, 122, 1);
+    }
+  }
+}
+
+// 医生登录抽屉样式
+.doctor-login {
+  .draw-title {
+    text-align: center;
+    font-size: 30px;
+    @include puhui-r;
+    color: #656D81;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+
+  .handle-area {
+    height: 490px;
+    line-height: 490px;
+
+    .face {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      border: 10PX solid rgba(44, 59, 193, 1);
+    }
+
+    .qr-code {
+      width: 290px;
+      height: 290px;
+      border: 10PX solid rgba(44, 59, 193, 1);
+    }
+
+    .doctor-list {
+      width: 100%;
+      height: 100%;
+      padding: 20px 40px;
+      overflow-y: auto;
+
+      li {
+        font-size: 22px;
+        height: 45px;
+        line-height: 45px;
+        color: #000;
+        padding: 0 15px;
+
+        &.active,
+        &:hover {
+          background-color: #1452EE;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .type-box {
+    padding: 0 20px;
+    margin-top: 15px;
+  }
+
+  .face-type,
+  .qr-code-type,
+  .list-type {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+      font-size: 36px;
+    }
+  }
+
+  .face-type.active,
+  .qr-code-type.active,
+  .list-type.active {
+    color: #1452EE;
+
+    i {
+      color: #1452EE;
+    }
+  }
+}
+
+.el-table::before {
+  height: 0 !important;
+}
+
+.clinical-diagnose {
+  .el-table {
+    position: absolute;
+  }
+}
+
+// 配置页面
+.area-config {
+  .el-menu {
+    @include el-menu-bg;
+  }
+  .el-menu-item {
+    @include el-menu-font-color;
+  }
+  .el-submenu__title {
+    @include el-menu-font-color;
+  }
+  .el-input__inner {
+   background-color: transparent;
+    @include menu-font-color;
+  }
+  .el-tabs__item {
+    @include el-menu-font-color;
+  }
+  .el-tabs__item.is-active {
+    color: #409EFF !important;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped td,
+  .el-table--enable-row-hover .el-table__body tr:hover>td,
+  .el-menu-item:hover,
+  .el-menu-item:focus,
+  .el-submenu__title:hover {
+    @include el-menu-item-hover;
+  }
+  .el-table th,
+  .el-table tr {
+    background-color: Transparent;
+  }
+
+  .el-table {
+    max-height: 100%;
+    overflow-y: auto;
+    font-size: 18px;
+    background-color: Transparent;
+    @include el-table-font-color;
+  }
+  .el-table thead {
+    @include el-table-title-font-color;
+  }
+  .el-table td,
+  .el-table th.is-leaf {
+    @include el-table-border-bottom;
+    background-color: transparent;
+  }
+
+  .el-table--medium td,
+  .el-table--medium th {
+    padding: 12px 0;
+  }
+
+
+  .el-dialog__title {
+    font-size: 24px;
+  }
+  .el-dialog__body,
+  .el-form-item__label {
+    font-size: 22px;
+  }
+
+  .el-form-item__label {
+    width: 120px;
+  }
+
+  .el-radio {
+    .el-radio__label {
+      font-size: 20px;
+    }
+  }
+
+  .el-select {
+    .el-input__inner {
+      font-size: 18px;
+    }
+  }
+
+  .el-switch__label * {
+    font-size: 18px;
+  }
+
+  // 显示内容-病区关注tab
+  .el-tabs__item {
+    font-size: 18px;
+  }
+
+  // 显示内容-病区关注-上下限指标
+  .el-input-number .el-input__inner {
+    font-size: 18px;
+  }
+
+  // 备忘录显示，隐藏联系方式
+  .hidden-tel {
+    position: absolute;
+    height: 25px;
+    bottom: 25px;
+    left: 25px;
+    font-size: 20px;
+    .el-checkbox__label {
+      font-size: 20px;
+      color: #409EFF;
+    }
+  }
+  // 显示内容-病区关注-检验类-折叠小图标隐藏
+  .focus-content .el-table__expand-icon {
+    visibility: hidden;
+  }
+}
+
+// 菜单激活
+.el-menu-item.is-active {
+  background-color: rgba(84, 136, 241, 0.2);
+  color: #2343B6;
+}
+
+.el-message-box {
+  .el-message-box__header {
+    font-size: 24px;
+  }
+  .el-message-box__content {
+    font-size: 20px;
+  }
+}
+
+//二级页面
+.area-detail{
+  .el-submenu__title {
+    font-size: 21px;
+    @include el-menu-font-color;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #409eff !important;
+  }
+  .el-menu-item{
+    font-size:18px;
+    @include el-menu-font-color;
+  }
+
+  .el-menu-item.is-active{
+    @include el-menu-font-color;
+  }
+  //表格行
+  .el-table tr {
+    background-color: transparent;
+    @include el-table-font-color;
+  }
+  //表头
+  .el-table th {
+    @include el-table-title-bg-color;
+    color: #fff;
+  }
+  //行下边框虚线
+  .el-table td {
+    border-bottom: 1px dashed #707070;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped td,
+  .el-table--enable-row-hover .el-table__body tr:hover>td,
+  .el-menu-item:hover,
+  .el-menu-item:focus,
+  .el-submenu__title:hover {
+    @include el-menu-item-hover;
+  }
+}
+
+//二级页面报告
+.report-detail{
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-dialog__body {
+    @include home-title-s-font-color;
+  }
+  .el-radio {
+    @include el-table-title-font-color;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 0.00521rem solid Transparent;
+  }
+  .el-table {
+    background-color: transparent;
+  }
+  //表头
+  .el-table th {
+    @include el-table-title-bg-color;
+    font-weight: normal;
+  }
+  .detail-content{
+    //表格行
+    .el-table tr {
+      background-color: transparent;
+      @include el-table-font-color;
+    }
+  }
+  .el-radio__label{
+    font-size: 21px;
+  }
+}
+
+.area-detail {
+  .el-checkbox__input {
+    width: 14px;
+    height: 21px;
+  }
+  .el-checkbox__label {
+    font-size: 20px;
+  }
+  .el-menu {
+    border-right: none;
+    background-color: transparent;
+  }
+}
+
+// 单选框垂直对其
+.el-radio__inner {
+  vertical-align: super;
+}
+
+.ward-cheat {
+  .el-textarea__inner {
+    border: none;
+    height: 100%;
+    background-color: transparent;
+    @include home-title-s-font-color;
+  }
+}
+
+.area-remark {
+  .el-form-item__label {
+    @include home-title-s-font-color;
+  }
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-dialog__body {
+    @include home-title-s-font-color;
+  }
+  .el-input__inner {
+    background-color: transparent;
+    @include menu-font-color;
+  }
+  .el-button--primary {
+    @include button-bg-pri-color;
+    color: #fff !important;
+    @include button-border-pri-color;
+  }
+  .el-button {
+    @include button-bg-color;
+    @include home-title-s-font-color;
+    @include button-border-color;
+  }
+}
+
+.el-notification__group {
+  width: 100%;
+}
+
+// 实时提醒消息弹框样式
+.el-notification {
+  // 危急值
+  &.real-time {
+    position: absolute;
+    width: 370px;
+    background-color: #001D3F;
+    overflow: visible;
+  }
+  // 一般提醒
+  &.general {
+    width: 570px;
+    height: 85px;
+    position: absolute;
+    background-color: #001D3F;
+    overflow: visible;
+    .name {
+      max-width: 140px;
+      margin-right: 20px;
+      line-height: normal;
+    }
+    .report {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .critical,
+  .general {
+    width: 100%;
+    color: #fff;
+  }
+  // 一般提醒 垂直居中
+  .general {
+    margin-top: 10px;
+  }
+  .close-btn {
+    position: absolute;
+    left:-30px;
+    top: 50%;
+    transform: translateY(-50%);
+    word-break: break-all;
+    width: 30px;
+    height: 85px;
+    line-height: 42px;
+    color: #100F0F;
+    background:#EDEDED;
+    box-shadow:0 0 5px rgba(24,40,92,0.6);
+    font-size: 16px;
+    border-radius:10px;
+    text-align: center;
+    @include puhui-r;
+    cursor: pointer;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bed-no {
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background-color: #1E3C72FF;
+    border-radius:4px;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .name {
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .title-s {
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+    color: #1ceef7;
+    text-align: right;
+  }
+  .value {
+    font-size: 20px;
+    color: #fff;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .doctor-box {
+    width: 140px;
+    height: 35px;
+    background-color: #e8f2ff;
+    overflow: hidden;
+    border-radius: 4px;
+    .doctor-icon {
+      width: 37px;
+      height: 35px;
+      background-color: #9cc7f7;
+      background-image: url('../assets/images/icon-male-doc.png');
+      background-size: 25px 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+    }
+    .doctor-name {
+      @include home-title-font-color;
+      margin-left: 8px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .red {
+    color: #FF3030;
+  }
+  .warning {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/images/real-time-warn.png');
+    background-size: cover;
+    animation: real 1s infinite;
+    margin-right: 10px;
+  }
+
+  @keyframes real {
+    0% {
+      transform: scale(1)
+    }
+    50% {
+      transform: scale(1.2)
+    }
+  }
+}
+
+.doctor-duty,
+.doctor-group {
+  .el-form-item__label {
+    @include home-title-s-font-color;
+  }
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-button--primary {
+    @include button-bg-pri-color;
+    color: #fff !important;
+    @include button-border-pri-color;
+  }
+  .el-button {
+    @include button-bg-color;
+    @include home-title-s-font-color;
+    @include button-border-color;
+  }
+  .el-switch__label {
+    @include home-title-s-font-color;
+  }
+  .el-switch__label.is-active {
+    color: #409EFF;
+  }
+}
+
+.in-hospital {
+  .el-form-item__label {
+    @include home-title-s-font-color;
+  }
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-button--primary {
+    @include button-bg-pri-color;
+    color: #fff !important;
+    @include button-border-pri-color;
+  }
+  .el-button {
+    @include button-bg-color;
+    @include home-title-s-font-color;
+    @include button-border-color;
+  }
+}
+
+.test-class {
+  .el-radio {
+    @include home-title-s-font-color;
+  }
+  .el-form-item__label {
+    @include home-title-s-font-color;
+  }
+  .activedQuota td {
+    background-color: rgba(84, 136, 241, 0.2) !important;
+  }
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-button--primary {
+    @include button-bg-pri-color;
+    color: #fff !important;
+    @include button-border-pri-color;
+  }
+  .el-button {
+    @include button-bg-color;
+    @include home-title-s-font-color;
+    @include button-border-color;
+  }
+}
+
+.websocket {
+  .band-dialog {
+    .el-dialog {
+      height: 300px;
+      border-radius: 8px;
+      background: linear-gradient(360deg, #18285c 0%, #273d93 100%);
+      box-shadow: 0px 0px 5px rgba(24, 40, 92, 0.3);
+    }
+
+    .el-dialog__body {
+      text-align: center;
+    }
+  }
+
+  .band-timeset-dialog {
+    pointer-events:none;
+    margin-top: 320px;
+    .el-dialog {
+      pointer-events:auto;
+      height: 185px;
+      border-radius: 8px;
+      background: linear-gradient(360deg, #18285c 0%, #273d93 100%);
+      box-shadow: 0px 0px 5px rgba(24, 40, 92, 0.3);
+    }
+
+    .el-dialog__body {
+      padding: 0 50px;
+      text-align: center;
+    }
+  }
+}
+// table 取消行高
+.el-table .cell {
+  line-height: normal !important;
+}
+
+.key-area {
+  .el-table tr {
+    background-color: Transparent;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 0.00521rem solid Transparent;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    @include el-menu-item-hover;
+  }
+}
+
+.bed-list {
+  .el-table th,
+  .el-table tr {
+    background-color: Transparent;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 0.00521rem solid Transparent;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    @include el-menu-item-hover;
+  }
+  .el-table thead {
+    @include el-table-title-font-color;
+  }
+}
+
+.el-popover {
+  @include tooptip-color;
+  border: 0 !important;
+}
+
+.popper__arrow::after {
+  @include arrow-color;
+}
+
+.config-style {
+  .el-divider {
+    @include bed-no-unfocus;
+  }
+  .el-divider__text {
+    @include bed-no-unfocus;
+  }
+  .el-radio {
+    @include home-title-s-font-color;
+  }
+}
+
+.detail-normal {
+  .el-table {
+    background: transparent;
+  }
+  .el-table td, .el-table th.is-leaf {
+    @include el-table-border-bottom;
+  }
+
+}
+
+.operation-box {
+  .el-timeline-item__content {
+    @include el-menu-font-color;
+  }
+  .el-timeline-item__tail {
+    @include time-line-color;
+  }
+  .el-timeline-item__node--normal {
+    @include time-line-node-color;
+  }
+}
+
+.treat-content {
+  .el-table th.el-table__cell {
+    background: transparent;
+  }
+  .el-table {
+    background: transparent;
+  }
+  .el-table th,
+  .el-table tr {
+    background-color: Transparent;
+    @include el-table-font-color;
+  }
+  .el-table td, .el-table th.is-leaf {
+    @include el-table-border-bottom;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    @include el-menu-item-hover;
+  }
+}
+
+.doctor-advices {
+  //表头
+  .el-table th {
+    @include treat-table-tltle-bg-color;
+  }
+}
+
+.heart-contain {
+  .el-table {
+    border: none;
+    background: transparent;
+  }
+  .el-table th,
+  .el-table tr {
+    border-right: none;
+    background-color: Transparent;
+    @include el-table-font-color;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-right: none;
+    @include el-table-border-bottom;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    @include el-menu-item-hover;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+    background-color: rgba(76, 142, 222, 0.2)
+  }
+  //表头
+  .el-table th {
+    background: transparent !important;
+  }
+  .el-table th.el-table__cell>.cell {
+    color: #1370e6;
+  }
+  .el-button--mini, .el-button--small {
+    font-size: 16px;
+  }
+}
+
+.examition-reports {
+  .el-input__inner {
+    background: transparent;
+    @include menu-font-color;
+  }
+  .el-dialog {
+    @include dialog-background-color;
+  }
+  .el-dialog__title {
+    @include home-title-font-color;
+  }
+  .el-dialog__body {
+    @include home-title-s-font-color;
+  }
+}
+
+.case-history {
+  .el-input__inner {
+    background: transparent;
+    @include menu-font-color;
+  }
+}

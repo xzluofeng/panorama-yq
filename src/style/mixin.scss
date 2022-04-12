@@ -1,0 +1,1893 @@
+@charset "utf-8";
+@import "./variable";
+
+// app组件背景颜色
+@mixin bg() {
+  [data-theme="blue"] & {
+    background: $background-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $background-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $background-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $background-technology;
+  }
+}
+
+//床位号选中
+@mixin bed-no-focus() {
+  [data-theme="blue"] & {
+    background: $bed-no-focus-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $bed-no-focus-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $bed-no-focus-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $bed-no-focus-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $bed-no-focus-dark;
+  }
+}
+
+//床位号常规
+@mixin bed-no-unfocus() {
+  [data-theme="blue"] & {
+    background: $bed-no-unfocus-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $bed-no-unfocus-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $bed-no-unfocus-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $bed-no-unfocus-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $bed-no-unfocus-dark;
+  }
+}
+
+//默认按钮颜色
+@mixin button-bg-color() {
+  [data-theme="blue"] & {
+    background: $button-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $button-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $button-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $button-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $button-bg-color-dark;
+  }
+}
+
+//主要按钮颜色
+@mixin button-bg-pri-color() {
+  [data-theme="blue"] & {
+    background: $button-bg-pri-color-blue !important;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $button-bg-pri-color-chinese-medicine !important;
+  }
+
+  [data-theme="childlike"] & {
+    background: $button-bg-pri-color-childlike !important;
+  }
+
+  [data-theme="technology"] & {
+    background: $button-bg-pri-color-technology !important;
+  }
+
+  [data-theme="dark"] & {
+    background: $button-bg-pri-color-dark !important;
+  }
+}
+
+// 首页 - 标题下边框颜色
+@mixin home-title-border-color() {
+  [data-theme="blue"] & {
+    border-bottom: $home-page-title-border-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-bottom: $home-page-title-border-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-bottom: $home-page-title-border-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-bottom: $home-page-title-border-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-bottom: $home-page-title-border-dark;
+  }
+}
+
+// chart- 文字颜色
+@mixin chart-name-color() {
+  [data-theme="blue"] & {
+    color: $chart-name-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $chart-name-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $chart-name-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $chart-name-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $chart-name-font-color-dark;
+  }
+}
+
+@mixin home-line-border() {
+  [data-theme="blue"] & {
+    border-right: $home-line-border-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-right: $home-line-border-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-right: $home-line-border-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-right: $home-line-border-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-right: $home-line-border-dark;
+  }
+}
+
+// 首页 - 标题字体颜色
+@mixin home-title-font-color() {
+  [data-theme="blue"] & {
+    color: $home-page-title-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $home-page-title-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $home-page-title-font-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    color: $home-page-title-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $home-page-title-font-color-dark;
+  }
+}
+
+// 首页 - 标题字体颜色
+@mixin go-back-font-color() {
+  [data-theme="blue"] & {
+    color: $go-back-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $go-back-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $go-back-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $go-back-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $go-back-font-color-dark;
+  }
+}
+// 首页 - 背景图片
+@mixin home-bg-img() {
+  [data-theme="blue"] & {
+    background-image: $background-img-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $background-img-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $background-img-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $background-img-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $background-img-dark;
+  }
+}
+
+// 头部- 背景图片
+@mixin header-bg-img() {
+  [data-theme="blue"] & {
+    background-image: $header-img-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $header-img-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $header-img-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $header-img-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $header-img-dark;
+  }
+}
+
+// 按钮边框
+@mixin button-border-color() {
+  [data-theme="blue"] & {
+    border: $button-border-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border: $button-border-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border: $button-border-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border: $button-border-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    border: $button-border-color-dark;
+  }
+}
+
+// 主要按钮边框
+@mixin button-border-pri-color() {
+  [data-theme="blue"] & {
+    border: $button-bg-pri-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border: $button-bg-pri-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border: $button-bg-pri-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border: $button-bg-pri-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    border: $button-bg-pri-color-dark;
+  }
+}
+
+//医生卡背景色
+@mixin doctor-item-bg-color() {
+  [data-theme="blue"] & {
+    background: $doctor-item-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $doctor-item-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $doctor-item-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $doctor-item-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $doctor-item-bg-color-dark;
+  }
+}
+
+// 首页 - 小标题字体颜色
+@mixin home-title-s-font-color() {
+  [data-theme="blue"] & {
+    color: $home-page-title-s-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $home-page-title-s-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $home-page-title-s-font-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    color: $home-page-title-s-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $home-page-title-s-font-color-dark;
+  }
+}
+
+@mixin dialog-background-color() {
+  [data-theme="blue"] & {
+    background: $dialog-background-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $dialog-background-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $dialog-background-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $dialog-background-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $dialog-background-color-dark;
+  }
+}
+
+// 首页 - 内容字体颜色
+@mixin home-font-color() {
+  [data-theme="blue"] & {
+    color: $home-page-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $home-page-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $home-page-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $home-page-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $home-page-font-color-dark;
+  }
+}
+
+//表格下边框
+@mixin el-table-border-bottom() {
+  [data-theme="blue"] & {
+    border-bottom: $el-table-border-bottom-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-bottom: $el-table-border-bottom-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-bottom: $el-table-border-bottom-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-bottom: $el-table-border-bottom-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-bottom: $el-table-border-bottom-dark;
+  }
+}
+
+// 菜单字体
+@mixin el-menu-font-color() {
+  [data-theme="blue"] & {
+    color: $el-menu-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $el-menu-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $el-menu-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $el-menu-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $el-menu-font-color-dark;
+  }
+}
+
+@mixin el-table-title-font-color() {
+  [data-theme="blue"] & {
+    color: $el-table-title-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $el-table-title-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $el-table-title-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $el-table-title-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $el-table-title-font-color-dark;
+  }
+}
+
+@mixin el-table-title-bg-color() {
+  [data-theme="blue"] & {
+    background-color: $el-table-title-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $el-table-title-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $el-table-title-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $el-table-title-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $el-table-title-bg-color-dark;
+  }
+}
+
+@mixin remark-title-font-color() {
+  [data-theme="blue"] & {
+    color: $remark-title-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $remark-title-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $remark-title-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $remark-title-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $remark-title-font-color-dark;
+  }
+}
+
+@mixin el-table-font-color() {
+  [data-theme="blue"] & {
+    color: $el-table-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $el-table-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $el-table-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $el-table-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $el-table-font-color-dark;
+  }
+}
+
+// 菜单hover
+@mixin el-menu-item-hover() {
+  [data-theme="blue"] & {
+    background-color: $el-menu-item-hover-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $el-menu-item-hover-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $el-menu-item-hover-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $el-menu-item-hover-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $el-menu-item-hover-dark;
+  }
+}
+
+// 菜单背景颜色
+@mixin menu-bg-color() {
+  [data-theme="blue"] & {
+    background: $menu-box-bg-color-blue;
+    box-shadow: $menu-box-shadow-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $menu-box-bg-color-chinese-medicine;
+    box-shadow: $menu-box-shadow-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $menu-box-bg-color-childlike;
+    box-shadow: $menu-box-shadow-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $menu-box-bg-color-technology;
+    box-shadow: $menu-box-shadow-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $menu-box-bg-color-dark;
+    box-shadow: $menu-box-shadow-dark;
+  }
+}
+
+@mixin menu-font-color() {
+  [data-theme="blue"] & {
+    color: $home-page-title-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $home-page-title-font-color-blue;
+  }
+
+  [data-theme="childlike"] & {
+    color: $home-page-title-font-color-blue;
+  }
+
+  [data-theme="technology"] & {
+    color: $home-page-title-font-color-blue;
+  }
+
+  [data-theme="dark"] & {
+    color: $home-page-font-color-dark;
+  }
+}
+
+@mixin menu-active-bg() {
+  [data-theme="blue"] & {
+    background: $menu-box-active-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $menu-box-active-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $menu-box-active-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $menu-box-active-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $menu-box-active-color-dark;
+  }
+}
+
+@mixin el-menu-bg() {
+  [data-theme="blue"] & {
+    background: $el-menu-bg-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $el-menu-bg-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $el-menu-bg-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $el-menu-bg-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $el-menu-bg-dark;
+  }
+}
+
+@mixin button-border() {
+  [data-theme="blue"] & {
+    border: $button-border-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border: $button-border-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border: $button-border-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border: $button-border-technology;
+  }
+
+  [data-theme="dark"] & {
+    border: $button-border-dark;
+  }
+}
+
+// 首页 - 内容标题背景色 横版
+@mixin home-title-bg() {
+  [data-theme="blue"] & {
+    background: $home-page-title-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $home-page-title-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $home-page-title-bg-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    background: $home-page-title-bg-color-technology;
+  }
+}
+
+// 首页 - 内容标题背景色 竖版
+@mixin home-title-s-bg() {
+  [data-theme="blue"] & {
+    background: $home-page-title-s-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $home-page-title-s-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $home-page-title-s-bg-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    background: $home-page-title-s-bg-color-technology;
+  }
+}
+
+// 首页 - 内容背景色 横版
+@mixin home-content-bg() {
+  [data-theme="blue"] & {
+    background: $home-page-content-bg-color-blue;
+  }
+
+  [data-theme="dark"] & {
+    background: $home-page-content-bg-color-dark;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $home-page-content-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $home-page-content-bg-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    background: $home-page-content-bg-color-technology;
+  }
+}
+
+// 首页 - 内容背景色 竖版
+@mixin home-content-s-bg() {
+  [data-theme="blue"] & {
+    background: $home-page-content-s-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $home-page-content-s-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $home-page-content-s-bg-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    background: $home-page-content-s-bg-color-technology;
+  }
+}
+
+// 首页 横版 - 所有床位 跳转按钮颜色
+@mixin home-link-color() {
+  [data-theme="blue"] & {
+    color: $home-page-link-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $home-page-link-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $home-page-link-color-childlike
+  }
+
+  [data-theme="technology"] & {
+    color: $home-page-link-color-technology;
+  }
+}
+
+// 二级页面 背景颜色
+@mixin secondary-page-bg() {
+  [data-theme="blue"] & {
+    background-color: $secondary-page-bg-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $secondary-page-bg-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $secondary-page-bg-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $secondary-page-bg-technology;
+  }
+}
+
+// 二级页面 字体颜色
+@mixin secondary-page-color() {
+  [data-theme="blue"] & {
+    color: $secondary-page-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $secondary-page-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $secondary-page-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $secondary-page-color-technology;
+  }
+}
+
+@mixin font-color() {
+  [data-theme="blue"] & {
+    color: $font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $font-color-technology;
+  }
+}
+
+@mixin bg-color() {
+  [data-theme="blue"] & {
+    background-color: $background-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $background-color-chinese-medicine;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $background-color-dark;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $background-color-childlike，;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $background-color-technology;
+  }
+}
+
+@mixin arrow-color() {
+  [data-theme="blue"] & {
+    border-top-color: $background-color-blue !important;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-top-color: $background-color-chinese-medicine !important;
+  }
+
+  [data-theme="dark"] & {
+    border-top-color: $background-color-dark !important;
+  }
+
+  [data-theme="childlike"] & {
+    border-top-color: $background-color-childlike，!important;
+  }
+
+  [data-theme="technology"] & {
+    border-top-color: $background-color-technology !important;
+  }
+}
+
+@mixin tooptip-color() {
+  [data-theme="blue"] & {
+    background: $home-message-box-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $home-message-box-color-chinese-medicine;
+  }
+
+  [data-theme="dark"] & {
+    background: $home-message-box-color-dark;
+  }
+
+  [data-theme="childlike"] & {
+    background: $home-message-box-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $home-message-box-color-technology;
+  }
+}
+
+/*弹性盒属性*/
+%flexbox {
+  display: inline-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/*弹性盒比例*/
+@mixin flex($num:1) {
+  -webkit-box-flex: $num;
+  -moz-box-flex: $num;
+  -webkit-flex: $num;
+  -ms-flex: $num;
+  flex: $num;
+}
+
+/*超行溢出显示省略号*/
+@mixin overflow($num:1, $fontSize:0, $lineHeight:1.5) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+
+  @if $fontSize !=0 and $lineHeight {
+    /*高度需要撑开*/
+    line-height: $lineHeight;
+
+    @if $lineHeight < 1.2 {
+      line-height: 1.2;
+      /*最小需要1.2，否则在部分安卓机下第$num+1行会顶部漏出*/
+    }
+
+    height: $num * $fontSize * $lineHeight;
+  }
+}
+
+//医生配置页面 底部button
+@mixin bg-button() {
+  [data-theme="childlike"] & {
+    color: $font-color-blue;
+  }
+
+  [data-theme="blue"] & {
+    color: #6DBAF5;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $font-color-chinese-medicine;
+  }
+
+  [data-theme="technology"] & {
+    color: $font-color-technology;
+  }
+}
+
+// 计算表达式
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+// 床位号宽高 变化
+@mixin bed-no-size-change($size) {
+  @include calc(min-width, $size/18 * 60px);
+  @include calc(height, $size/18 * 28px);
+  @include calc(line-height, $size/18 * 28px);
+}
+
+//模块图标-危重
+@mixin module-icon-wz() {
+  [data-theme="blue"] & {
+    background-image: $module-wz-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-wz-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-wz-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-wz-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-wz-icon-dark;
+  }
+}
+
+//模块图标-分娩
+@mixin module-icon-fm() {
+  [data-theme="blue"] & {
+    background-image: $module-fm-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-fm-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-fm-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-fm-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-fm-icon-dark;
+  }
+}
+
+//模块图标-病区概览
+@mixin module-icon-bqgl() {
+  [data-theme="blue"] & {
+    background-image: $module-bqgl-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-bqgl-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-bqgl-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-bqgl-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-bqgl-icon-dark;
+  }
+}
+
+//模块图标-出区
+@mixin module-icon-cq() {
+  [data-theme="blue"] & {
+    background-image: $module-cq-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-cq-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-cq-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-cq-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-cq-icon-dark;
+  }
+}
+
+//模块图标-床位列表
+@mixin module-icon-cwlb() {
+  [data-theme="blue"] & {
+    background-image: $module-cwlb-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-cwlb-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-cwlb-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-cwlb-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-cwlb-icon-dark;
+  }
+}
+
+//模块图标-预约检查
+@mixin module-icon-yyjc() {
+  [data-theme="blue"] & {
+    background-image: $module-yyjc-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-yyjc-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-yyjc-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-yyjc-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-yyjc-icon-dark;
+  }
+}
+
+//模块图标-患者分组
+@mixin module-icon-hzfz() {
+  [data-theme="blue"] & {
+    background-image: $module-hzfz-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-hzfz-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-hzfz-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-hzfz-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-hzfz-icon-dark;
+  }
+}
+
+//模块图标-病区关注
+@mixin module-icon-bqgz() {
+  [data-theme="blue"] & {
+    background-image: $module-bqgz-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-bqgz-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-bqgz-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-bqgz-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-bqgz-icon-dark;
+  }
+}
+
+//模块图标-手术排期
+@mixin module-icon-sspq() {
+  [data-theme="blue"] & {
+    background-image: $module-sspq-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-sspq-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-sspq-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-sspq-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-sspq-icon-dark;
+  }
+}
+
+//模块图标-入区
+@mixin module-icon-rq() {
+  [data-theme="blue"] & {
+    background-image: $module-rq-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-rq-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-rq-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-rq-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-rq-icon-dark;
+  }
+}
+
+//模块图标-新生儿
+@mixin module-icon-xse() {
+  [data-theme="blue"] & {
+    background-image: $module-xse-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-xse-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-xse-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-xse-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-xse-icon-dark;
+  }
+}
+
+//模块图标-诊疗组
+@mixin module-icon-zlz() {
+  [data-theme="blue"] & {
+    background-image: $module-zlz-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $module-zlz-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $module-zlz-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $module-zlz-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $module-zlz-icon-dark;
+  }
+}
+
+//菜单图标-首页
+@mixin menu-icon-home() {
+  [data-theme="blue"] & {
+    background-image: $menu-home-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $menu-home-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $menu-home-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $menu-home-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $menu-home-icon-dark;
+  }
+}
+
+//菜单图标-床位列表
+@mixin menu-icon-cwlb() {
+  [data-theme="blue"] & {
+    background-image: $menu-cwlb-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $menu-cwlb-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $menu-cwlb-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $menu-cwlb-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $menu-cwlb-icon-dark;
+  }
+}
+
+//菜单图标-备忘录
+@mixin menu-icon-bwl() {
+  [data-theme="blue"] & {
+    background-image: $menu-bwl-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $menu-bwl-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $menu-bwl-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $menu-bwl-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $menu-bwl-icon-dark;
+  }
+}
+
+//菜单图标-辅助交班
+@mixin menu-icon-fzjb() {
+  [data-theme="blue"] & {
+    background-image: $menu-fzjb-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $menu-fzjb-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $menu-fzjb-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $menu-fzjb-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $menu-fzjb-icon-dark;
+  }
+}
+
+//cis交班菜单背景
+@mixin cis-menu-bg-color() {
+  [data-theme="blue"] & {
+    background: $cis-menu-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $cis-menu-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $cis-menu-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $cis-menu-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $cis-menu-bg-color-dark;
+  }
+}
+
+//cis交班菜单数字背景
+@mixin cis-menu-number-color() {
+  [data-theme="blue"] & {
+    background: $cis-menu-number-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $cis-menu-number-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $cis-menu-number-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $cis-menu-number-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $cis-menu-number-color-dark;
+  }
+}
+
+//cis交班表格标题背景
+@mixin cis-tb--bg-color() {
+  [data-theme="blue"] & {
+    background: $cis-tb--bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $cis-tb--bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $cis-tb--bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $cis-tb--bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $cis-tb--bg-color-dark;
+  }
+}
+
+//检验趋势图图标
+@mixin lis-trend-icon() {
+  [data-theme="blue"] & {
+    background-image: $lis-trend-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $lis-trend-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $lis-trend-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $lis-trend-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $lis-trend-icon-dark;
+  }
+}
+
+//检验趋势图图标
+@mixin treat-menu-active-color() {
+  [data-theme="blue"] & {
+    color: $treat-menu-active-color-blue;
+    border-bottom: 0.02604rem solid $treat-menu-active-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $treat-menu-active-color-chinese-medicine;
+    border-bottom: 0.02604rem solid $treat-menu-active-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $treat-menu-active-color-childlike;
+    border-bottom: 0.02604rem solid $treat-menu-active-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $treat-menu-active-color-technology;
+    border-bottom: 0.02604rem solid $treat-menu-active-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $treat-menu-active-color-dark;
+    border-bottom: 0.02604rem solid $treat-menu-active-color-dark;
+  }
+}
+
+//表格虚线边框
+@mixin el-table-solid-border() {
+  [data-theme="blue"] & {
+    border-bottom: $el-table-dashed-border-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-bottom: $el-table-dashed-border-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-bottom: $el-table-dashed-border-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-bottom: $el-table-dashed-border-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-bottom: $el-table-dashed-border-dark;
+  }
+}
+
+@mixin title-s-font-color() {
+  [data-theme="blue"] & {
+    color: $title-s-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $title-s-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $title-s-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $title-s-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $title-s-font-color-dark;
+  }
+}
+
+@mixin font-add-icon() {
+  [data-theme="blue"] & {
+    background-image: $font-add-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $font-add-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $font-add-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $font-add-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $font-add-icon-dark;
+  }
+}
+
+@mixin font-cut-icon() {
+  [data-theme="blue"] & {
+    background-image: $font-cut-icon-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $font-cut-icon-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $font-cut-icon-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $font-cut-icon-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $font-cut-icon-dark;
+  }
+}
+
+//时间线点背景色
+@mixin time-line-node-color() {
+  [data-theme="blue"] & {
+    background-color: $time-line-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $time-line-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $time-line-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $time-line-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $time-line-bg-color-dark;
+  }
+}
+
+//时间线颜色
+@mixin time-line-color() {
+  [data-theme="blue"] & {
+    border-left: 0.01042rem solid $time-line-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-left: 0.01042rem solid $time-line-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-left: 0.01042rem solid $time-line-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-left: 0.01042rem solid $time-line-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-left: 0.01042rem solid $time-line-bg-color-dark;
+  }
+}
+
+@mixin treat-menu-bg-color() {
+  [data-theme="blue"] & {
+    background: $treat-menu-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $treat-menu-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $treat-menu-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $treat-menu-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $treat-menu-bg-color-dark;
+  }
+}
+
+@mixin treat-table-tltle-bg-color() {
+  [data-theme="dark"] & {
+    background: $el-table-title-bg-color-dark;
+  }
+}
+
+@mixin a-font-color() {
+  [data-theme="dark"] & {
+    color: $a-font-color-dark;
+  }
+}
+
+@mixin a-not-active-color() {
+  [data-theme="blue"] & {
+    color: $a-not-active-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $a-not-active-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $a-not-active-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $a-not-active-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $a-not-active-font-color-dark;
+    opacity:0.2;
+  }
+}
+
+@mixin treat-header-bg() {
+  [data-theme="blue"] & {
+    background-image: $treat-header-bg-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $treat-header-bg-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $treat-header-bg-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $treat-header-bg-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $treat-header-bg-dark;
+  }
+}
+
+@mixin time-history-bg-color() {
+  [data-theme="blue"] & {
+    background-image: $time-history-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $time-history-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $time-history-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $time-history-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $time-history-bg-color-dark;
+  }
+}
+
+@mixin time-history-line() {
+  [data-theme="blue"] & {
+    border-top: $time-history-line-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    border-top: $time-history-line-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    border-top: $time-history-line-childlike;
+  }
+
+  [data-theme="technology"] & {
+    border-top: $time-history-line-technology;
+  }
+
+  [data-theme="dark"] & {
+    border-top: $time-history-line-dark;
+  }
+}
+
+@mixin time-history-font-color() {
+  [data-theme="blue"] & {
+    color: $time-history-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $time-history-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $time-history-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $time-history-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $time-history-font-color-dark;
+  }
+}
+
+@mixin time-history-active-font-color() {
+  [data-theme="blue"] & {
+    color: $a-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $a-font-color-blue;
+  }
+
+  [data-theme="childlike"] & {
+    color: $a-font-color-blue;
+  }
+
+  [data-theme="technology"] & {
+    color: $a-font-color-blue;
+  }
+
+  [data-theme="dark"] & {
+    color: $treat-menu-active-color-dark;
+  }
+}
+
+@mixin scrollbar-bg-color() {
+  [data-theme="blue"] & {
+    background-color: $scrollbar-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $scrollbar-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $scrollbar-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $scrollbar-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $scrollbar-bg-color-dark;
+  }
+}
+
+@mixin scrollbar-thumb-bg-color() {
+  [data-theme="blue"] & {
+    background-color: $scrollbar-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-color: $scrollbar-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-color: $scrollbar-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-color: $scrollbar-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-color: $scrollbar-thumb-bg-color-dark;
+  }
+}
+
+@mixin bqtt-content-title-font-color() {
+  [data-theme="blue"] & {
+    color: $bqtt-content-title-font-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    color: $bqtt-content-title-font-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    color: $bqtt-content-title-font-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    color: $bqtt-content-title-font-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    color: $bqtt-content-title-font-color-dark;
+  }
+}
+
+@mixin treat-icon-doctor() {
+  [data-theme="blue"] & {
+    background-image: $treat-icon-doctor-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $treat-icon-doctor-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $treat-icon-doctor-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $treat-icon-doctor-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $treat-icon-doctor-dark;
+  }
+}
+
+@mixin treat-icon-nurse() {
+  [data-theme="blue"] & {
+    background-image: $treat-icon-nurse-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background-image: $treat-icon-nurse-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background-image: $treat-icon-nurse-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background-image: $treat-icon-nurse-technology;
+  }
+
+  [data-theme="dark"] & {
+    background-image: $treat-icon-nurse-dark;
+  }
+}
+
+@mixin hzfz-2n-bg-color() {
+  [data-theme="blue"] & {
+    background: $hzfz-2n-bg-color-blue;
+  }
+
+  [data-theme="chinese-medicine"] & {
+    background: $hzfz-2n-bg-color-chinese-medicine;
+  }
+
+  [data-theme="childlike"] & {
+    background: $hzfz-2n-bg-color-childlike;
+  }
+
+  [data-theme="technology"] & {
+    background: $hzfz-2n-bg-color-technology;
+  }
+
+  [data-theme="dark"] & {
+    background: $hzfz-2n-bg-color-dark;
+  }
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'puhuiBold';
+  font-display: swap;
+  src: url-loader('../assets/font/puhuiBold/webfont.eot');
+  /* IE9 */
+  src: url-loader('../assets/font/puhuiBold/webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url-loader('../assets/font/puhuiBold/webfont.woff2') format('woff2'),
+    url-loader('../assets/font/puhuiBold/webfont.woff') format('woff'),
+    /* chrome、firefox */
+    url-loader('../assets/font/puhuiBold/webfont.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url-loader('../assets/font/puhuiBold/webfont.svg#webfont') format('svg');
+  /* iOS 4.1- */
+}
+
+@mixin puhui-b {
+  font-family: "puhuiBold" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'puhuiMedium';
+  font-display: swap;
+  src: url-loader('../assets/font/puhuiMedium/webfont.eot');
+  /* IE9*/
+  src: url-loader('../assets/font/puhuiMedium/webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url-loader('../assets/font/puhuiMedium/webfont.woff2') format('woff2'),
+    url-loader('../assets/font/puhuiMedium/webfont.woff') format('woff'),
+    /* chrome、firefox */
+    url-loader('../assets/font/puhuiMedium/webfont.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url-loader('../assets/font/puhuiMedium/webfont.svg#webfont') format('svg');
+  /* iOS 4.1- */
+}
+
+@mixin puhui-m {
+  font-family: "puhuiMedium" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'puhuiRegular';
+  font-display: swap;
+  src: url-loader('../assets/font/puhuiRegular/webfont.eot');
+  /* IE9*/
+  src: url-loader('../assets/font/puhuiRegular/webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url-loader('../assets/font/puhuiRegular/webfont.woff2') format('woff2'),
+    url-loader('../assets/font/puhuiRegular/webfont.woff') format('woff'),
+    /* chrome、firefox */
+    url-loader('../assets/font/puhuiRegular/webfont.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url-loader('../assets/font/puhuiRegular/webfont.svg#webfont') format('svg');
+  /* iOS 4.1- */
+}
+
+@mixin puhui-r {
+  font-family: "puhuiRegular" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

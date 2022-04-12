@@ -1,0 +1,288 @@
+/*
+ * @Descripttion: 一些全局样式
+ * @version:
+ * @Author: wangqi
+ * @Date: 2019-08-14 16:55:28
+ * @LastEditors: wangqi
+ * @LastEditTime: 2019-08-15 16:23:02
+ */
+
+ /* ============================================================
+   flex：定义布局为盒模型
+   flex-v：盒模型垂直布局
+   flex-1：子元素占据剩余的空间
+   flex-align-center：子元素垂直居中
+   flex-pack-center：子元素水平居中
+   flex-pack-justify：子元素两端对齐
+   .flex-pack-justify-around: 子元素分散对齐
+   ============================================================ */
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-reverse {
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.flex-v {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-pack-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-pack-justify-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-pack-justify-around {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+
+.flex-pack-justify-end {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+}
+
+.fs-16 { font-size: 16px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-22 { font-size: 22px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-26 { font-size: 26px !important; }
+.fs-28 { font-size: 28px !important; }
+
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
+.ml-10 { margin-left: 10px;}
+.ml-15 { margin-left: 15px;}
+.ml-20 { margin-left: 20px;}
+
+// 暂无数据样式
+.no-data {
+  font-size: 18px;
+  color: #909399;
+  text-align: center;
+}
+
+// 头部tip icon样式
+.header-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  &.header-edit { background-image: url('../assets/images/header-edit.png'); }
+  &.header-config { background-image: url('../assets/images/header-config.png'); }
+  &.screenshot { background-image: url('../assets/images/screenshot.png'); }
+  &.document { background-image: url('../assets/images/document.png'); }
+  &.add-font { @include font-add-icon }
+  &.cut-font { @include font-cut-icon }
+  &.config-style { background-image: url('../assets/images/config-style.png') }
+  &.config-doctor { background-image: url('../assets/images/config-doctor.png') }
+  &.config-content { background-image: url('../assets/images/config-content.png') }
+}
+
+.module-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  // 危重
+  &.module-WZ { @include module-icon-wz; }
+  // 病区概览
+  &.module-BQGL { @include module-icon-bqgl; }
+  // 分娩
+  &.module-FM { @include module-icon-fm; }
+  // 出区
+  &.module-CQ { @include module-icon-cq; }
+  // 床位列表
+  &.module-CWLB { @include module-icon-cwlb; }
+  // 预约检查
+  &.module-YYJC { @include module-icon-yyjc; }
+  // 患者分组
+  &.module-HZFZ { @include module-icon-hzfz; }
+  // 病区关注
+  &.module-BQGZ { @include module-icon-bqgz; }
+  // 手术排期
+  &.module-SSPQ { @include module-icon-sspq; }
+  // 入区
+  &.module-RQ { @include module-icon-rq; }
+  // 新生儿
+  &.module-XSE { @include module-icon-xse; }
+}
+
+.btn-group {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-bottom: -10px;
+  .identity-btn {
+    width: 120px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid#DCDFE6;
+    border-radius: 50px;
+    @include menu-font-color;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    &.active {
+      color: #fff;
+      background-color: #409eff;
+      border-color: #409eff;
+    }
+  }
+}
+
+.config-group-dialog .el-dialog__body {
+  height: 500px;
+  overflow-y: auto;
+}
+
+// 标签 备忘录页面，患者详情页面
+.tag-all,
+.tag {
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &.active {
+    color: #fff;
+    border-color: #0e91f2;
+    background-color: #0e91f2;
+  }
+  &.color-0,
+  &.color-1 {
+    border: 1px solid #ff9191;
+    background-color: #ffe6e6;
+    color: #ff3030;
+  }
+
+  &.color-2,
+  &.color-3 {
+    border: 1px solid #fba13b;
+    background-color: #fff2e6;
+    color: #fba13b;
+  }
+
+  &.color-4,
+  &.color-5 {
+    border: 1px solid #6cb3ff;
+    background-color: #e6f3ff;
+    color: #20a0ff;
+  }
+
+  &.color-6,
+  &.color-7 {
+    border: 1px solid #e351d5;
+    background-color: #fff1fe;
+    color: #f544e4;
+  }
+}
+
+.tag-all {
+  color: #0e91f2;
+  border: 1px solid #0e91f2;
+}
+
+// echart 提示框
+.chart-tip-title {
+  display: inline-block;
+  color: #333;
+  margin-right: 5px;
+  text-align: right;
+}
+
+.chart-tip-value {
+  color: #333;
+  font-weight: 600;
+  white-space: normal;
+}
+
+.chart-tip {
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0 0 3px 0 #A6A6A6;
+  border-radius: 2px;
+  padding: 15px 15px 5px 20px;
+}
+
+.el-table__empty-block {
+  height: auto !important;
+}
+
+.red {
+  color: #ff3030;
+}
+green {
+  color: #00aca7;
+}
+
+// 趋势图
+.icon-trend {
+  display: inline-block;
+  @include lis-trend-icon;
+  background-size: cover;
+  cursor: pointer;
+  &.fs-18 {
+    width: 24px;
+    height: 24px;
+  }
+  &.fs-20 {
+    width: 26px;
+    height: 26px;
+  }
+  &.fs-22 {
+    width: 28px;
+    height: 28px;
+  }
+  &.fs-24 {
+    width: 30px;
+    height: 30px;
+  }
+  &.fs-26 {
+    width: 32px;
+    height: 32px;
+  }
+}
